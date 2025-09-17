@@ -35,6 +35,18 @@ class LinkedList():
             temp.next = prev
             prev = temp
         self.head = prev
+    
+    # Recursive approach
+    def reverseList(self,head):
+        if head==None or head.next==None:
+            return head
+        newHead = self.reverseList(head.next)
+        front=head.next
+        front.next=head
+        head.next=None
+        return newHead
+            
+            
 
 ll = LinkedList()
 ll.push_back(1)
