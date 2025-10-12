@@ -1,5 +1,5 @@
 class Solution:
-    def evenOddBit(self, n: int) -> List[int]:
+    def evenOddBit(self, n: int):
         even = 0
         odd = 0
         while n>0:
